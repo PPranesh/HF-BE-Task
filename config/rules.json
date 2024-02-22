@@ -14,4 +14,23 @@
 			{ "action": "Mark as", "field": "READ" }
 		]
 	},
+	{
+		"id": "Rule4",
+		"predicate": "ANY",
+		"conditions": [
+			{
+			        "field": "subject", 
+			        "predicate": "contains", 
+			        "value": "check"
+		      	},
+		      	{ 
+			        "field": "sender", 
+			        "predicate": "equals", 
+			        "value": "ppranesh55@gmail.com"
+			}
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "READ" }
+		]
+	},
 ]
