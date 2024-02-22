@@ -1,0 +1,4 @@
+config/credentials.json
+config/emails.db
+config/token.pickle
+src/__pycache__
