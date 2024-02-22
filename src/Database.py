@@ -7,14 +7,7 @@ Base = declarative_base()
 
 # Replace 'your_username', 'your_password', 'your_host', 'your_database' with your actual MySQL credentials
 DATABASE_URL = "mysql://your_username:your_password@your_host/your_database"
-
 engine = create_engine(DATABASE_URL, echo=True)
-
-""" Create the table """
-Base.metadata.create_all(bind=engine)
-
-""" Inserting data """
-Session = sessionmaker(bind=engine)
 
 """ Email Model class """
 class Email(Base):
@@ -99,7 +92,12 @@ class Email(Base):
             return ""
 
 
-"""
+""" Create the table """
+Base.metadata.create_all(bind=engine)
+
+""" Inserting data """
+Session = sessionmaker(bind=engine)
+
 def testInsertion():
     try:
         session = Session()
@@ -119,4 +117,4 @@ def testInsertion():
         session.close()
     except (Exception) as e:
         print(f'Email session error - {e}')
-"""
+
