@@ -54,7 +54,7 @@
       { 
         "field": "sender", 
         "predicate": "equals", 
-        "value": "ppranesh55@gmail.com" }
+        "value": "ppranesh55+test@gmail.com" }
 		],
 		"actions": [
 			{ "action": "Mark as", "field": "READ" }
@@ -72,7 +72,7 @@
       { 
         "field": "sender", 
         "predicate": "equals", 
-        "value": "ppranesh55@gmail.com" }
+        "value": "ppranesh55+test@gmail.com" }
 		],
 		"actions": [
 			{ "action": "Mark as", "field": "READ" }
@@ -85,7 +85,7 @@
       { 
         "field": "sender", 
         "predicate": "equals", 
-        "value": "ppranesh5@gmail.com" }
+        "value": "ppranesh5+test@gmail.com" }
 		],
 		"actions": [
 			{ "action": "Mark as", "field": "READ" }
@@ -98,7 +98,7 @@
       { 
         "field": "sender", 
         "predicate": "equals", 
-        "value": "ppranesh5@gmail.com" 
+        "value": "ppranesh5+test@gmail.com" 
       }
 		],
 		"actions": [
@@ -112,7 +112,7 @@
       { 
         "field": "sender", 
         "predicate": "does not equal", 
-        "value": "ppranesh55@gmail.com" 
+        "value": "ppranesh5+test5+test@gmail.com" 
       }
 		],
 		"actions": [
