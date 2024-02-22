@@ -1,6 +1,6 @@
 from datetime import datetime
 import base64,json
-import pandas as pd
+# import pandas as pd
 
 EXP_TIME_FORMAT = "%Y-%m-%d %H:%M:%S.%f"
 
@@ -35,21 +35,21 @@ class Datas:
 			print(f" Exception occured in Datas -> body_contents -> {e}")
 			return "Data is not readable"
 	
-	@staticmethod
-	def ORM2JSON(query,return_type='J'):
-		df = pd.DataFrame(query)
-		if df.empty:
-			return []
-		result = json.loads(df.to_json(orient='records',default_handler=str))
-		del df
-		try:
-			if return_type == 'J':
-				return result
-			if return_type == 'P':
-				return pd.DataFrame(result)
-			return result
-		except Exception as e:
-			print(f"ORM2JSON - {str(e)}")
-		return result
+	# @staticmethod
+	# def ORM2JSON(query,return_type='J'):
+	# 	df = pd.DataFrame(query)
+	# 	if df.empty:
+	# 		return []
+	# 	result = json.loads(df.to_json(orient='records',default_handler=str))
+	# 	del df
+	# 	try:
+	# 		if return_type == 'J':
+	# 			return result
+	# 		if return_type == 'P':
+	# 			return pd.DataFrame(result)
+	# 		return result
+	# 	except Exception as e:
+	# 		print(f"ORM2JSON - {str(e)}")
+	# 	return result
 			
     
