@@ -25,15 +25,20 @@ Interview assesment repository for Happy Fox for Backend Engineer role
 
 # Getting Started
 
-1. Run the script to fetch emails:
+1. Create the DB schema and update the Database CREDS in the below mentioned file.
+
+   ```bash
+    python3 src/Database.py
+    ```
+3. Run the script to fetch emails:
 
     ```bash
     python3 src/GmailAPI.py
     ```
 
-2. Edit the rules in the config/rules.json file.
+4. Edit the rules in the config/rules.json file.
 
-3. Run the script to apply rules:
+5. Run the script to apply rules:
     ```bash
     python3 src/UpdateEmailsByRules.py
     ```
