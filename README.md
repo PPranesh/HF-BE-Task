@@ -1,5 +1,5 @@
 # HF-BE-Task
-Interview assesment repository for Happy Fox for Backend Engineer role
+Interview assessment repository for Happy Fox for Backend Engineer role
 
 # Project Setup
 
