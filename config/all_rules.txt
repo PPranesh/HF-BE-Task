@@ -112,7 +112,7 @@
       { 
         "field": "sender", 
         "predicate": "does not equal", 
-        "value": "ppranesh5+test5+test@gmail.com" 
+        "value": "ppranesh5+test@gmail.com" 
       }
 		],
 		"actions": [
