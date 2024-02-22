@@ -1,0 +1,136 @@
+
+[
+	{
+		"id": "Rule1",
+		"predicate": "ALL",
+		"conditions": [
+			{
+				"field": "subject",
+				"predicate": "contains",
+				"value": "test"
+			}
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "READ" }
+		]
+	},
+	{
+		"id": "Rule2",
+		"predicate": "ALL",
+		"conditions": [
+			{
+				"field": "sender",
+				"predicate": "contains",
+				"value": "pranesh"
+			}
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "UNREAD" }
+		]
+	},
+	{
+		"id": "Rule3",
+		"predicate": "ALL",
+		"conditions": [
+			{
+        "field": "subject", 
+        "predicate": "contains", 
+        "value": "check"
+      },
+      { 
+        "field": "sender", 
+        "predicate": "equals", 
+        "value": "ppranesh55@gmail.com" }
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "READ" }
+		]
+	},
+	{
+		"id": "Rule4",
+		"predicate": "ANY",
+		"conditions": [
+			{
+        "field": "subject", 
+        "predicate": "contains", 
+        "value": "check"
+      },
+      { 
+        "field": "sender", 
+        "predicate": "equals", 
+        "value": "ppranesh55@gmail.com" }
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "READ" }
+		]
+	},
+	{
+		"id": "Rule5",
+		"predicate": "ANY",
+		"conditions": [
+      { 
+        "field": "sender", 
+        "predicate": "equals", 
+        "value": "ppranesh5@gmail.com" }
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "READ" }
+		]
+	},
+	{
+		"id": "Rule6",
+		"predicate": "ALL",
+		"conditions": [
+      { 
+        "field": "sender", 
+        "predicate": "equals", 
+        "value": "ppranesh5@gmail.com" 
+      }
+		],
+		"actions": [
+			{ "action": "Move Message", "field": "STARRED" }
+		]
+	},
+	{
+		"id": "Rule7",
+		"predicate": "ALL",
+		"conditions": [
+      { 
+        "field": "sender", 
+        "predicate": "does not equal", 
+        "value": "ppranesh55@gmail.com" 
+      }
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "UNREAD" }
+		]
+	},
+	{
+		"id": "Rule9",
+		"predicate": "ALL",
+		"conditions": [
+      { 
+        "field": "mail_rec_time", 
+        "predicate": "less than", 
+        "value": "2" 
+      }
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "READ" }
+		]
+	},
+	{
+		"id": "Rule10",
+		"predicate": "ALL",
+		"conditions": [
+      { 
+        "field": "mail_rec_time", 
+        "predicate": "greater than", 
+        "value": "2" 
+      }
+		],
+		"actions": [
+			{ "action": "Mark as", "field": "READ" }
+		]
+	}
+]
